@@ -37,7 +37,7 @@ EPSON Printer
 03/05/2013
 88888
 EPSON Printer Cart.
-32.50	5
+32.5	5
 03/05/2013
 67899
 Instant Coffee
@@ -45,4 +45,4 @@ Instant Coffee
 03/05/2013
 12899
 Paper Shredder
-199.99 1
+199.99	1

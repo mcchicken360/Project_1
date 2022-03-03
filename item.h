@@ -1,31 +1,162 @@
+/***********************************************************************************
+ * Authors      : David Mei, Matthew Mirbasoo, You Lyu, Ruitau He
+ * Project #1   : Super Warehouse
+ * Class        : CS008
+ * Due Date     : 03/03/2022
+***********************************************************************************/
 #ifndef ITEM_H
 #define ITEM_H
 #include "members.h"
-#include <vector>
 using namespace std;
 
 class Item
-{
-  public:
-    Item();
-    void newDate(string fileName);
-    void setItem(string);
-    void setDate(string);
-    void setID(int);
-    void setQuantity(int);
-    void setCost(double);
+{    
+    public:
+    /*****************
+    ** CONSTRUCTOR **
+    ******************/
+      Item();
+      /***************
+      * MUTATORS *
+      **************/
+      void setItem(string);
+      void setDate(string);
+      void setID(int);
+      void setQuantity(int);
+      void setCost(double);
+    /**************
+    ** ACCESSORS **
+    ***************/
+      string getItem();
+      string getDate();
+      int getID();
+      int getQuantity();
+      double getCost();
 
-    string getItem();
-    string getDate();
-    int getID();
-    int getQuantity();
-    double getCost();
-
-  private:
-    string _item, _date;
-    int _id, _quantity;
-    double _cost;
-    vector <string> _storeDates;
+    private:
+      string _item, _date;
+      int _id, _quantity;
+      double _cost;
 };
+
+/****************************************************************
+ * Item Class
+ *  Item class is used for the day file to store items into a
+ *  container. The class has _item, _date, _id, _quantity, and
+ *   _cost. Using accessors and mututors.
+ ***************************************************************/
+
+/******************************
+** CONSTRUCTOR & DESTRUCTOR **
+******************************/
+
+/****************************************************************
+ * Item();
+ * Constructor; Initialize class attributes
+ * Parameters: none
+ * Return: none
+ ***************************************************************/
+
+/***************
+** ACCESSORS **
+***************/
+
+/*******************************************************************
+*   string getItem();
+*
+*   Accessor; Get name attributes of an Item object
+*------------------------------------------------------------------
+*   Parameter: none
+*------------------------------------------------------------------
+*   Return: item name
+*******************************************************************/
+/*******************************************************************
+*  string getDate();
+*
+*   Accessor; get date attributes of an Item object
+*------------------------------------------------------------------
+*   Parameter: none
+*------------------------------------------------------------------
+*   Return: date
+*******************************************************************/
+/*******************************************************************
+*  int getID();
+*
+*   Accessor; get ID attributes of an Item object
+*------------------------------------------------------------------
+*   Parameter: none
+*------------------------------------------------------------------
+*   Return: ID
+*******************************************************************/
+/*******************************************************************
+*  int getQuantity();
+*
+*   Accessor; get Quantity attributes of an Item object
+*------------------------------------------------------------------
+*   Parameter: none
+*------------------------------------------------------------------
+*   Return: quantity of item
+*******************************************************************/
+/*******************************************************************
+*  double getCost();
+*
+*   Accessor; get Cost attributes of an Item object
+*------------------------------------------------------------------
+*   Parameter: none
+*------------------------------------------------------------------
+*   Return: cost
+*******************************************************************/
+
+
+/***************
+* MUTATORS *
+**************/
+
+/*******************************************************************
+* void setItem(string);
+*
+*   Mutator; set name of an Item object
+*------------------------------------------------------------------
+*   Parameter: s(string) - IN //pass in the name attributes
+*------------------------------------------------------------------
+*   Return: none
+*******************************************************************/
+/*******************************************************************
+* void setDate(string);
+*
+*   Mutator; set date of an Item object
+*------------------------------------------------------------------
+*   Parameter: s(string) - IN //pass in the date attributes
+*------------------------------------------------------------------
+*   Return:
+*******************************************************************/
+/*******************************************************************
+* void setID(int);
+*
+*   Mutator; set ID of an Item object
+*------------------------------------------------------------------
+*   Parameter: num(int) - IN //pass in the ID attributes
+*------------------------------------------------------------------
+*   Return:
+*******************************************************************/
+/*******************************************************************
+* void setQuantity(int);
+*
+*   Mutator; set Quantity of an Item object
+*------------------------------------------------------------------
+*   Parameter: num(int) - IN //pass in the Quantity attributes
+*------------------------------------------------------------------
+*   Return:
+*******************************************************************/
+/*******************************************************************
+* void setCost(double);
+*
+*   Mutator; set cost of an Item object
+*------------------------------------------------------------------
+*   Parameter: num(int) - IN //pass in the cost attributes
+*------------------------------------------------------------------
+*   Return:
+*******************************************************************/
+
 
 #endif // ITEM_H

@@ -35,4 +35,5 @@ DISTFILES += \
     day3.txt \
     day4.txt \
     day5.txt \
+    deleteNames.txt \
     warehouseShoppers.txt
