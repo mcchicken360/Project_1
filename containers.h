@@ -281,20 +281,6 @@ void Containers<E>::display(){
     }
 }
 
-
-// void Containers::getMemberType(int value){
-//   bool complex;
-//   complex = false;
-//     for(int i = 0; i < (current - 1); i++){
-//        if(array[i].getID() == value)
-//               array[i].getinfo();
-//         else
-//           complex = true;
-//     }
-//     if(complex)
-//       cout << "No matching customer.";
-// }
-
 /**********************************************************
 *
 * Method operator[]: Class Containers

@@ -28,11 +28,9 @@ MainWindow::MainWindow(QWidget *parent)
     ui->textBrowser->insertPlainText("Empty warehouse.\n");
     ui->lcdNumber->setDigitCount(1);
     ui->lcdNumber->setSegmentStyle(QLCDNumber::Flat);
-//    ui->textBrowser_2->insertPlainText(num);
-   // ui->textBrowser->setTextBackgroundColor(Qt::blue);
-    //set(hObject, 'BackgroundColor', [63, 246,244]);
+
     ui->textBrowser->setStyleSheet("background-color: rgb(12,133,87);");
-    //QMainWindow::QWidget { "background-color: rgb(0, 0, 0);"};
+
 }
 
 /***********************************************************
@@ -706,7 +704,7 @@ void MainWindow::findItem(string s) {
 
   }
   else{
-      ui->textBrowser->insertPlainText("heck Inventory\n");
+      ui->textBrowser->insertPlainText("Check Inventory\n");
       ui->textBrowser->insertPlainText("************************\n");
       ui->textBrowser->insertPlainText("No such item exists.\nOr yet sold.");
   }

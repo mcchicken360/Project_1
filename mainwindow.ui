@@ -366,13 +366,6 @@
            </property>
           </widget>
          </item>
-         <item>
-          <widget class="QRadioButton" name="radioButton_5">
-           <property name="text">
-            <string>ALL</string>
-           </property>
-          </widget>
-         </item>
         </layout>
        </item>
        <item row="0" column="5">
